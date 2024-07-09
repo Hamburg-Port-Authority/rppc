@@ -3,7 +3,7 @@ name: Docker-Build
 on:
   push:
     tags:
-      - '*'
+      - "*"
 
 # permissions are needed if pushing to ghcr.io
 permissions:
@@ -34,7 +34,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            ghcr.io/deb4sh/rppc
+            ghcr.io/hamburg-port-authority/rppc
           # Docker tags based on the following events/attributes
           tags: |
             type=schedule
